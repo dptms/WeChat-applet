@@ -1,0 +1,18 @@
+<!-- 文章列表模板 -->
+<template name="postItem">
+  <view class='post-container'>
+    <view class='post-author-data'>
+      <image src='{{item.avatar}}' class='post-author'></image>
+      <text class='post-date'>{{item.date}}</text>
+    </view>
+    <text class='post-title'>{{item.title}}</text>
+    <image src="{{item.imgSrc}}" class='post-image'></image>
+    <text class='post-content'>{{item.content}}</text>
+    <view class='post-like-reply'>
+      <image src='/images/icon/chat.png' class='post-like-image'></image>
+      <text class='post-like-count'>{{item.reading}}</text>
+      <image src='/images/icon/chat1.png' class='post-like-image'></image>
+      <text class='post-like-count'>{{item.collection}}</text>
+    </view>
+  </view>
+</template>

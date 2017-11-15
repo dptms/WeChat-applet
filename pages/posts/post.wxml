@@ -1,4 +1,6 @@
+<import src="post-item/post-item" />
 <view>
+  <!-- 轮播 -->
   <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
     <block wx:for="{{banners}}">
       <swiper-item>
@@ -7,35 +9,7 @@
     </block>
   </swiper>
 
-  <view class='post-container'>
-    <view class='post-author-data'>
-      <image src='/images/123.jpg' class='post-author'></image>
-      <text class='post-date'>Nov 25 2016</text>
-    </view>
-    <text class='post-title'>风华正茂时</text>
-    <image src='/images/123.jpg' class='post-image'></image>
-    <text class='post-content'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores commodi consequatur corporis, dicta doloremque eligendi expedita facere hic incidunt libero magnam porro quidem reprehenderit sapiente sequi, soluta suscipit tenetur!</text>
-    <view class='post-like-reply'>
-      <image src='/images/collect.png' class='post-like-image'></image>
-      <text class='post-like-count'>0</text>
-      <image src='/images/reply.png' class='post-like-image'></image>
-      <text class='post-like-count'>0</text>
-    </view>
-  </view>
-
-  <view class='post-container'>
-    <view class='post-author-data'>
-      <image src='/images/123.jpg' class='post-author'></image>
-      <text class='post-date'>Nov 25 2016</text>
-    </view>
-    <text class='post-title'>风华正茂时</text>
-    <image src='/images/123.jpg' class='post-image'></image>
-    <text class='post-content'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores commodi consequatur corporis, dicta doloremque eligendi expedita facere hic incidunt libero magnam porro quidem reprehenderit sapiente sequi, soluta suscipit tenetur!</text>
-    <view class='post-like-reply'>
-      <image src='/images/collect.png' class='post-like-image'></image>
-      <text class='post-like-count'>0</text>
-      <image src='/images/reply.png' class='post-like-image'></image>
-      <text class='post-like-count'>0</text>
-    </view>
-  </view>
+  <block wx:for="{{posts}}" wx:for-item="item">
+    <template is="postItem" data="{{item}}"/>
+  </block>
 </view>
