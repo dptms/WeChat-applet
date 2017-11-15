@@ -1,5 +1,5 @@
 <!-- 文章列表模板 -->
-<template name="postItem">
+<template name="postItemTemplate">
   <view class='post-container'>
     <view class='post-author-data'>
       <image src='{{avatar}}' class='post-author'></image>

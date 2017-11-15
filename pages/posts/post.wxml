@@ -1,4 +1,4 @@
-<import src="post-item/post-item" />
+<import src="post-item/post-item-template" />
 <view>
   <!-- 轮播 -->
   <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
@@ -10,6 +10,6 @@
   </swiper>
 
   <block wx:for="{{posts}}" wx:for-item="item">
-    <template is="postItem" data="{{...item}}"/>
+    <template is="postItemTemplate" data="{{...item}}"/>
   </block>
 </view>

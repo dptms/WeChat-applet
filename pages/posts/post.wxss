@@ -7,4 +7,4 @@ swiper image {
   height: 480rpx;
 }
 
-@import 'post-item/post-item'
+@import 'post-item/post-item-template'
