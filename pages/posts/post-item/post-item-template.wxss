@@ -43,7 +43,6 @@
 
 .post-content{
   color: #666;
-  font-size: 28rpx;
   margin: 10rpx 10rpx;
   letter-spacing: 2rpx;
   line-height: 40rpx;

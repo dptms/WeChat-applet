@@ -1,0 +1,86 @@
+.post-detail-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-detail-banner {
+  width: 100%;
+}
+
+.post-detail-meta {
+  flex-direction: row;
+  margin: 20rpx 20rpx 20rpx 30rpx;
+}
+
+.post-detail-user {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 64rpx;
+  vertical-align: middle;
+}
+
+.post-detail-author {
+  font-size: 30rpx;
+  font-weight: 300;
+  margin-left: 20rpx;
+  vertical-align: middle;
+  color: #666;
+}
+
+.post-detail-created-at {
+  font-size: 24rpx;
+  margin-left: 30rpx;
+  vertical-align: middle;
+  color: #999;
+}
+
+.post-detail-title {
+  margin-left: 40rpx;
+  font-size: 36rpx;
+  font-weight: 700;
+  margin-top: 15rpx;
+  letter-spacing: 2px;
+  color: #4b556c;
+}
+
+.post-detail-collect-and-share {
+  margin-top: 20rpx;
+}
+
+.post-detail-collect-and-share image {
+  margin-right: 20rpx;
+  width: 80rpx;
+  height: 80rpx;
+  vertical-align: middle;
+  float: right;
+}
+
+.post-detail-through {
+  width: 100%;
+  height: 1rpx;
+  background-color: #e5e5e5;
+  vertical-align: middle;
+  position: relative;
+  top: 40rpx;
+  margin: 0 auto;
+  z-index: -99;
+}
+
+.post-detail-content {
+  color: #666;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+  margin-right: 30rpx;
+  line-height: 44rpx;
+  letter-spacing: 2rpx;
+}
+
+.audio {
+  width: 102rpx;
+  height: 102rpx;
+  position: absolute;
+  left: 50%;
+  margin-left: -51rpx;
+  top: 180rpx;
+  opacity: 0.6;
+}

@@ -1,6 +1,6 @@
 <!-- 文章列表模板 -->
 <template name="postItemTemplate">
-  <view class='post-container'>
+  <view class='post-container' catchtap='goToDetail' data-post-id='{{postId}}'>
     <view class='post-author-data'>
       <image src='{{avatar}}' class='post-author'></image>
       <text class='post-date'>{{date}}</text>
