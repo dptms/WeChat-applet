@@ -23,9 +23,8 @@ Page({
   },
   goToDetail(e){
     let postId = e.currentTarget.dataset.postId;
-    console.log(`post id id ${postId}`);
     wx.navigateTo({
-      url: '/pages/posts/post-detail/post-detail',
+      url: `/pages/posts/post-detail/post-detail?postId=${postId}`,
     })
   }
 })

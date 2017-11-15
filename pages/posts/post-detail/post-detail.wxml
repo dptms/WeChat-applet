@@ -1,18 +1,18 @@
 <view class='post-detail-container'>
-  <image src='/images/post/sls.jpg' class='post-detail-banner'></image>
+  <image src='{{post.headImgSrc}}' class='post-detail-banner'></image>
   <image class='audio' src='/images/music/music-start.png'></image>
   <view class='post-detail-meta'>
-    <image src='/images/123.jpg' class='post-detail-user'></image>
-      <text class='post-detail-author'>林一百</text>
-      <text class='post-detail-created-at'>发表于  24小时前</text>
+    <image src='{{post.avatar}}' class='post-detail-user'></image>
+      <text class='post-detail-author'>{{post.author}}</text>
+      <text class='post-detail-created-at'>发表于  {{post.dateTime}}</text>
   </view>
-  <text class='post-detail-title'>youshixiafsds</text>
+  <text class='post-detail-title'>{{post.title}}</text>
   <view class='post-detail-collect-and-share'>
     <image src='/images/icon/share.png' class='post-detail-share'></image>
     <image src='/images/icon/collection.png' class='post-detail-collection'></image>
     <view class='post-detail-through'></view>
   </view>
   <view class='post-detail-content'>
-    <text>菊黄蟹正肥，品尝秋之味。徐志摩把,“看初花的荻芦”和“到楼外楼吃蟹”,并列为秋天来杭州不能错过的风雅之事；用林妹妹的话讲是“螯封嫩玉双双满，</text>
+    <text>{{post.detail}}</text>
   </view>
 </view>
