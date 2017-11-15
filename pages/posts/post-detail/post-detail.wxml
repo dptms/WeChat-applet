@@ -9,7 +9,8 @@
   <text class='post-detail-title'>{{post.title}}</text>
   <view class='post-detail-collect-and-share'>
     <image src='/images/icon/share.png' class='post-detail-share'></image>
-    <image src='/images/icon/collection.png' class='post-detail-collection'></image>
+    <image wx:if="{{postCollected}}" catchtap='collect' src='/images/icon/collection.png' class='post-detail-collection'></image>
+    <image wx:else src='/images/icon/collection-anti.png' catchtap='collect' class='post-detail-collection'></image>
     <view class='post-detail-through'></view>
   </view>
   <view class='post-detail-content'>
