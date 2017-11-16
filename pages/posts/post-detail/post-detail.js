@@ -29,11 +29,20 @@ Page({
     }
   },
   collect() {
-    this.setData({
-      postCollected: !this.data.postCollected
+    wx.showModal({
+      title: this.data.postCollected ? '取消收藏' : '收藏',
+      content: this.data.postCollected ? '是否取消收藏' : '是否收藏',
+      confirmColor:'#405f80',
+      success: (res) => {
+        if (res.confirm) {
+          this.setData({
+            postCollected: !this.data.postCollected
+          })
+          let postsCollected = wx.getStorageSync('postsCollected')
+          postsCollected[this.data.post.postId] = this.data.postCollected
+          wx.setStorageSync('postsCollected', postsCollected)
+        }
+      }
     })
-    let postsCollected = wx.getStorageSync('postsCollected')
-    postsCollected[this.data.post.postId] = this.data.postCollected
-    wx.setStorageSync('postsCollected', postsCollected)
   }
 })

@@ -10,6 +10,5 @@ Page({
     wx.redirectTo({
       url: '../posts/post',
     });
-    wx.redirectTo
   }
 })

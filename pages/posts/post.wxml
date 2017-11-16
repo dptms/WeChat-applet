@@ -2,14 +2,14 @@
 <view>
   <!-- 轮播 -->
   <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-    <block wx:for="{{banners}}">
+    <block wx:for="{{banners}}" wx:key="key">
       <swiper-item>
         <image src="{{item}}"></image>
       </swiper-item>
     </block>
   </swiper>
 
-  <block wx:for="{{posts}}" wx:for-item="item">
+  <block wx:for="{{posts}}" wx:key="key">
     <template is="postItemTemplate" data="{{...item}}"/>
   </block>
 </view>
