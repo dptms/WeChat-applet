@@ -1,6 +1,6 @@
 <view class='post-detail-container'>
   <image src='{{post.headImgSrc}}' class='post-detail-banner'></image>
-  <image class='audio' src='/images/music/music-start.png'></image>
+  <image class='audio' catchtap='on_off_music' src="{{isPlayingMusic?'/images/music/music-stop.png':'/images/music/music-start.png'}}"></image>
   <view class='post-detail-meta'>
     <image src='{{post.avatar}}' class='post-detail-user'></image>
       <text class='post-detail-author'>{{post.author}}</text>
